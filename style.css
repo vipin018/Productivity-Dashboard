@@ -1,0 +1,8 @@
+:root {
+    --pri: #fef8f1;      /* Soft, warm ivory background */
+    --sec: #2f2f2f;      /* Rich dark charcoal for text */
+    --tert: #d1bfa7;     /* Soft tan with better contrast */
+    --quad: #ff914d;     /* Punchy coral-orange for CTAs */
+    --accent: #6a4e3d;   /* Rich cocoa brown for headers/contrast */
+  }
+  
