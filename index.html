@@ -114,19 +114,46 @@
       <h1>Daily Planner</h1>
     </section>
 
-    <section class="fullElem w-full h-full flex flex-col items-start gap-10 p-5 sm:p-10 text-3xl hidden absolute">
-      <button id="2"
-        class="back absolute right-[5%] bg-[#F5A623] rounded-lg text-white px-3 py-2 text-xl active:scale-[0.9] transition-all duration-200 ease-in-out">
-        close</button>
-      <h1>Motivational Quote</h1>
-    </section>
+    <section id="motivationalSection" class="fullElem w-full h-full flex flex-col justify-center items-center gap-6 p-5 sm:p-10 text-center text-xl sm:text-3xl bg-[#F8F3ED] hidden absolute">
+  <button id="2" class="back absolute top-5 right-5 bg-[#F5A623] rounded-lg text-white px-4 py-2 text-base sm:text-xl shadow-md active:scale-[0.95] transition-all duration-200 ease-in-out">
+    Close
+  </button>
 
-    <section class="fullElem w-full h-full flex flex-col items-start gap-10 p-5 sm:p-10 text-3xl hidden absolute">
-      <button id="3"
-        class="back absolute right-[5%] bg-[#F5A623] rounded-lg text-white px-3 py-2 text-xl active:scale-[0.9] transition-all duration-200 ease-in-out">
-        close</button>
-      <h1>Pomodoro Timer</h1>
-    </section>
+  <h1 class="text-[#7A6855] font-bold text-2xl sm:text-4xl">✨ Daily Motivation</h1>
+
+  <div class="quote-box max-w-3xl bg-[#D8C3A5] text-[#4E3F2A] p-6 sm:p-10 rounded-xl shadow-xl">
+    <p id="quoteText" class="text-lg sm:text-2xl italic leading-relaxed">"Loading..."</p>
+    <span id="quoteAuthor" class="block mt-4 text-sm sm:text-lg font-semibold text-right text-[#7A6855]">– Loading...</span>
+  </div>
+</section>
+
+
+<section id="pomodoroSection" class="fullElem w-full h-full flex flex-col justify-center items-center gap-10 p-5 sm:p-10 text-center text-xl sm:text-3xl bg-[#F8F3ED] hidden absolute">
+  <button id="3" class="back absolute top-5 right-5 bg-[#F5A623] rounded-lg text-white px-6 py-2 text-base sm:text-xl shadow-md active:scale-[0.95] transition-all duration-200 ease-in-out">
+    Close
+  </button>
+
+  <h1 class="text-[#7A6855] font-bold text-2xl sm:text-4xl">Pomodoro Timer</h1>
+
+  <div class="timer-box max-w-xs w-full sm:w-96 bg-[#D8C3A5] text-[#4E3F2A] p-10 rounded-xl shadow-xl flex flex-col items-center gap-4">
+    <div id="timerDisplay" class="text-5xl sm:text-7xl font-semibold">25:00</div>
+    <p id="mode" class="mt-2 text-lg sm:text-xl font-medium">Work Session</p>
+
+    <div class="relative w-full h-2 bg-[#7A6855] rounded-full">
+      <div id="progressBar" class="absolute top-0 left-0 h-full bg-[#F5A623] rounded-full"></div>
+    </div>
+  </div>
+
+  <div class="mt-6 flex gap-6">
+    <button id="startPauseBtn" class="bg-[#F5A623] text-white px-6 py-3 rounded-lg text-lg sm:text-xl shadow-md active:scale-[0.95] transition-all duration-200 ease-in-out hover:scale-105">
+      Start
+    </button>
+    <button id="resetBtn" class="bg-red-600 text-white px-6 py-3 rounded-lg text-lg sm:text-xl shadow-md active:scale-[0.95] transition-all duration-200 ease-in-out hover:scale-105">
+      Reset
+    </button>
+  </div>
+</section>
+
 
     <section class="fullElem w-full h-full flex flex-col items-start gap-10 p-5 sm:p-10 text-3xl hidden absolute">
       <button id="4"
